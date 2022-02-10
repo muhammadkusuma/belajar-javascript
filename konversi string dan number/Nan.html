@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Not A Number</title>
+</head>
+<body>
+<script>
+    document.writeln(`<p>${parseInt("Salah")}</p>`) //nan
+    document.writeln(`<p>${parseFloat("1.1text")}</p>`)
+
+    //number () tidak akan mentolelir kesalahan pada data
+    document.writeln(`<p>${Number("1.1ups")}</p>`) //nan
+    document.writeln(`<p>${Number("1x")}</p>`) //nan
+    document.writeln(`<p>${Number("bukan number")}</p>`) //nan
+
+    const value1=Number("Salah")
+    const value2=100
+    const sum=value1+value2
+
+    document.writeln(`<p>${sum}</p>`)
+
+    document.writeln(`<p>${isNaN(value1)}</p>`)
+</script>
+</body>
+</html>
