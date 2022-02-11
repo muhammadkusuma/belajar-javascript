@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tipe Data Object</title>
+</head>
+<body>
+<script>
+<!--  object kosong -->
+  const orang={}
+
+// menambah atau mengubah
+orang["nama"]="M. Wira Ade Kusuma"
+orang["alamat"]="Indonesia"
+orang["umur"]=19
+
+//menghapus
+delete orang["umur"]
+
+console.table(orang)
+
+//membuat onject dengan properties
+const person={
+  nama:"M. Wira Ade kusuma",
+  alamat:"Indonesia",
+  umur:19
+}
+
+console.table(person)
+
+//mengakses property object
+console.info(`Nama : ${person.nama}`)
+console.info(`Umur : ${person.umur}`)
+console.info(`Alamat : ${person.alamat}`)
+</script>
+</body>
+</html>
