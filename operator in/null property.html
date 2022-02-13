@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Operator In Undefined/Null Property</title>
+</head>
+<body>
+<script>
+    const person={
+        lastName:undefined
+    }
+    const result="lastName" in person
+    document.writeln(`<p>${result}</p>`)
+
+    const names=[null, "Wira",null]
+    const nameResult=0 in names
+    document.writeln(`<p>${nameResult}</p>`)
+</script>
+</body>
+</html>
