@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Opertor typeof</title>
+</head>
+<body>
+<p>Operator Typeof</p>
+<table border="1">
+    <th>Type</th>
+    <th>Hasil Operator typeof</th>
+    <tr>
+        <td>Undefined</td>
+        <td>"undefined"</td>
+    </tr>
+    <tr>
+        <td>Null</td>
+        <td>"object"</td>
+    </tr>
+    <tr>
+        <td>Boolean</td>
+        <td>"boolean"</td>
+    </tr>
+    <tr>
+        <td>Number</td>
+        <td>"number"</td>
+    </tr>
+    <tr>
+        <td>BitInt</td>
+        <td>"bigint"</td>
+    </tr>
+    <tr>
+        <td>String</td>
+        <td>"string"</td>
+    </tr>
+    <tr>
+        <td>Symbol</td>
+        <td>"symbol"</td>
+    </tr>
+    <tr>
+        <td>Function</td>
+        <td>"function"</td>
+    </tr>
+    <tr>
+        <td>Lainnya</td>
+        <td>"object"</td>
+    </tr>
+
+</table>
+<script>
+    let data=true
+
+    if (typeof data === "number"){
+        alert("Number")
+    }else if (typeof data === "string"){
+        alert("String")
+    }else if (typeof data === "boolean"){
+        alert("Boolean")
+    }else if (typeof data === "object"){
+        alert("Object")
+    }else {
+        alert("Lainnya : object")
+    }
+</script>
+</body>
+</html>
