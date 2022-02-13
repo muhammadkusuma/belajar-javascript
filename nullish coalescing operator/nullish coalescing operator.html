@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nullish Coalescing Operator</title>
+</head>
+<body>
+<script>
+<!--    tanpa-->
+    let parameter
+
+    let data=parameter
+    if (data === undefined || data == null){
+        data="Nilai Default"
+    }
+
+    alert(data)
+//dengan
+    let parameter1
+    let data1=parameter1 ?? "Nilai default"
+
+    alert(data1)
+</script>
+</body>
+</html>
