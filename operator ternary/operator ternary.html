@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Operator Ternary</title>
+</head>
+<body>
+<script>
+<!--    tanpa ternary operator-->
+    const nilai=80
+    let ucapan
+
+    if (nilai>=75){
+        ucapan="Anda Lulus"
+    }else {
+        ucapan="Selamat Ngulang"
+    }
+
+    document.writeln(`<p>${ucapan}</p>`)
+
+// ternary operator
+    const ucapan1=nilai>=75 ? "Lulus" : "Coba Lagi"
+    document.writeln(`<p>${ucapan1}</p>`)
+</script>
+</body>
+</html>
