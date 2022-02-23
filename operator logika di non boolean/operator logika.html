@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Operator Logika Non Boolean</title>
+</head>
+<body>
+<script>
+<!--    operator or-->
+    console.info("hello" || '')
+    console.info(""||[])
+    console.info("0"||"NOL")
+    console.info(0||"NOL")
+    console.info(null||"NULL")
+    console.info(undefined||"undefined")
+    console.info(0||false)
+
+    const person={
+        firstName:"",
+        lastName:"Kusuma"
+    }
+
+    const name=person.firstName||person.lastName
+    console.info(name)
+
+//operator and
+console.info("OPERATOR AND")
+    console.info("hello"&&'')
+    console.info(""&&[])
+    console.info("0"&&"NOL")
+    console.info(0&&"NOL")
+    console.info(null&&"NULL")
+    console.info(undefined&&"UNDEFINED")
+    console.info("undefined"&&"null")
+</script>
+</body>
+</html>
